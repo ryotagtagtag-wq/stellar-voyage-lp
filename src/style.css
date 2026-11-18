@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-stellar-dark text-stellar-white antialiased;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+    font-feature-settings: 'palt' 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Outfit', 'Noto Sans JP', sans-serif;
+    @apply tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-stellar-accent/40 text-stellar-white;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-stellar-accent ring-offset-2 ring-offset-stellar-dark;
+  }
+}
+
+@layer utilities {
+  /* 星野：小さな光点をタイル状に敷き詰める */
+  .bg-starfield {
+    background-image:
+      radial-gradient(1.5px 1.5px at 24px 36px, rgba(245, 245, 245, 0.7) 50%, transparent 50%),
+      radial-gradient(1px 1px at 132px 84px, rgba(232, 212, 168, 0.65) 50%, transparent 50%),
+      radial-gradient(1px 1px at 78px 176px, rgba(245, 245, 245, 0.45) 50%, transparent 50%),
+      radial-gradient(2px 2px at 196px 148px, rgba(197, 160, 89, 0.4) 50%, transparent 50%);
+    background-size: 220px 220px;
+  }
+
+  /* 星雲：ゴールドと藍の柔らかな光の重なり */
+  .bg-nebula {
+    background-image:
+      radial-gradient(ellipse at 12% 18%, rgba(197, 160, 89, 0.16), transparent 55%),
+      radial-gradient(ellipse at 88% 62%, rgba(58, 96, 168, 0.22), transparent 60%),
+      radial-gradient(ellipse at 50% 110%, rgba(197, 160, 89, 0.1), transparent 55%);
+  }
+
+  /* 構造線：設計図のような細いグリッド */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(138, 147, 168, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(138, 147, 168, 0.07) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
