@@ -35,12 +35,16 @@ const validate = () => {
 }
 
 const handleSubmit = () => {
-  isSubmitted.value = false
-  if (!validate()) return
+  // デモモード：フォームは disabled となっており、データは外部に送信されません。
+  // 実装時に disabled を外し、ここに送信処理を記述します。
+  console.log('[Stellar Voyage] 資料請求受信（デモモード・送信無効）:', { ...form })
 
-  // API 未実装のためのスタブ。実装時にここを送信処理へ差し替える。
-  console.log('[Stellar Voyage] 資料請求受信:', { ...form })
-  isSubmitted.value = true
+  // ジョーク演出：準備中メッセージ（※ これはジョークです）
+  alert(
+    '申し訳ございません、このフォームは現在準備中です。\n' +
+    '本サービスの受付開始は 2100 年を予定しております。\n' +
+    '（※ これはジョークです。データは外部に送信されていません。）'
+  )
 }
 </script>
 
