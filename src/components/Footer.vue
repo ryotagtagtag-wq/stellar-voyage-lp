@@ -26,11 +26,11 @@ const companyInfo = [
         <!-- ブランド -->
         <div class="lg:col-span-4">
           <a href="#top" class="inline-flex items-center gap-3" aria-label="ステラーヴォヤージュ トップへ戻る">
-            <span class="flex h-10 w-10 items-center justify-center rounded-full border border-stellar-accent/50 bg-stellar-accent/10">
-              <svg class="h-5 w-5 text-stellar-gold" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2.5 14.3 9.7 21.5 12l-7.2 2.3L12 21.5l-2.3-7.2L2.5 12l7.2-2.3z" fill="currentColor" />
-              </svg>
-            </span>
+            <img
+              src="/images/logo.webp"
+              alt="ステラーヴォヤージュ ロゴ"
+              class="h-10 w-10 rounded-full border border-stellar-accent/50 object-cover"
+            />
             <span>
               <span class="block font-display text-lg font-semibold tracking-wide text-stellar-white">ステラーヴォヤージュ</span>
               <span class="block font-display text-[10px] tracking-[0.34em] text-stellar-accent">STELLAR VOYAGE</span>

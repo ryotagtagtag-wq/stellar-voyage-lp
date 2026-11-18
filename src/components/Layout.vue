@@ -43,11 +43,11 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown))
     <header class="sticky top-0 z-50 border-b border-white/10 bg-stellar-dark/85 backdrop-blur-xl">
       <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-6 lg:h-20 lg:px-8">
         <a href="#top" class="group flex shrink-0 items-center gap-3" aria-label="ステラーヴォヤージュ トップへ" @click="closeMenu">
-          <span class="flex h-9 w-9 items-center justify-center rounded-full border border-stellar-accent/50 bg-stellar-accent/10 transition group-hover:bg-stellar-accent/20 lg:h-10 lg:w-10">
-            <svg class="h-4 w-4 text-stellar-gold lg:h-5 lg:w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M12 2.5 14.3 9.7 21.5 12l-7.2 2.3L12 21.5l-2.3-7.2L2.5 12l7.2-2.3z" fill="currentColor" />
-            </svg>
-          </span>
+          <img
+            src="/images/logo.jpg"
+            alt="ステラーヴォヤージュ ロゴ"
+            class="h-9 w-9 rounded-full border border-stellar-accent/50 transition group-hover:scale-105 lg:h-10 lg:w-10 object-cover"
+          />
           <span>
             <span class="block font-display text-sm font-semibold tracking-wide text-stellar-white lg:text-base">ステラーヴォヤージュ</span>
             <span class="block font-display text-[9px] tracking-[0.3em] text-stellar-accent">STELLAR VOYAGE</span>
