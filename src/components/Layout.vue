@@ -44,7 +44,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKeydown))
       <div class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-6 lg:h-20 lg:px-8">
         <a href="#top" class="group flex shrink-0 items-center gap-3" aria-label="ステラーヴォヤージュ トップへ" @click="closeMenu">
           <img
-            src="/images/logo.jpg"
+            src="/images/logo.webp"
             alt="ステラーヴォヤージュ ロゴ"
             class="h-9 w-9 rounded-full border border-stellar-accent/50 transition group-hover:scale-105 lg:h-10 lg:w-10 object-cover"
           />
